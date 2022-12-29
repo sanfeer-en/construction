@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins:wght@300;400;500;700&family=Taviraj:wght@200;300;500;600&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 
 .full_bg{
@@ -7,8 +7,16 @@
     background-size: 100% ;
     background-repeat: no-repeat;
     width: 100%;
-    height: 900vh;
+    height: 100vh;
+    position: relative;
+    
+
    
+}
+.rgba{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+
 }
 .header_top{
     background-color: #111;
@@ -21,6 +29,62 @@
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
 }
-navbar:hover a{
-    background-color: yellow !important;
+.nav-link:hover {
+    background-color:  #fe9901 !important;
+    border-radius: 8px;
+    padding: 15PX;
+}
+.navbar-toggler-icon::before,
+.navbar-toggler::before {
+  content: "\f0c9";  /* this is the Unicode character for the hamburger icon */
+  font-family: "Font Awesome 5 Free";  /* you can use any font that includes the hamburger icon */
+  font-weight: 900;  /* you can adjust the font weight to control the thickness of the icon */
+  color: #333;  /* you can use any color value to change the color of the icon */
+}
+
+/* carousel........... */
+
+.build_box {
+    text-align: left;
+    padding-top: 20%;
+}
+.build_box p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 55px;
+    text-align: left;
+}
+.build_box h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+}
+.carousel-control-prev,
+.carousel-control-next{
+    width: 80px !important;
+    height: 80px !important;
+    background-color: #111 !important;
+    border-radius: 50% !important;
+    
+    /* top: calc(50% -25); */
+}
+.carousel-control-prev{
+    right: 0% !important;
+}
+.carousel-control-next{
+    right: 0% !important;
+}
+.carousel-control-prev:hover,
+.carousel-control-prev:active {
+    background-color:  #fe9901 !important;/* red */
+}
+.carousel-control-next:hover{
+
+    background-color:  #fe9901 !important;
+}
+
+.service{
+    height: 250px;
+    background-color: #111;
 }
