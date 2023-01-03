@@ -149,6 +149,37 @@ about_img {
     font-style: italic;
     font-weight: 300;
 }
+/* owl carousel.............. */
+.projects{
+    padding-top: 90px;
+    background-color: #fff;
+}
+.contain {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .item {
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    width: 100%;
+    /* background-image: url(img/project_img1.png); */
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: cadetblue;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    background-color: #111 !important;
+}
+  
+  
 /* review............... */
 .choose{
     background: url(img/choose_bg.jpg);
@@ -194,7 +225,7 @@ about_img {
      display: inline-flex;
      margin: 0 auto;
 }
-.award_icon:hover{
+.award_icon i:hover{
     background-color:  #fe9901 !important;
     color: aliceblue;
 }
@@ -225,12 +256,13 @@ about_img {
     background-color: #fff;
     box-shadow: 0 0 250px rgb(3 3 3 / 15%);
     margin: 0 25px;
-    padding-top: 50px !important;
+    padding-top: 80px !important;
     padding: 0 15px;
+    height: 100%;
 }
 .man img{
     width: 60%;
-    height: 120px;
+    height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -238,10 +270,55 @@ about_img {
 .social_icon_main{
      background-color: #fe9901;
      border-radius: 5px;
-     padding: 15px;
+     padding-top: 15px;
+     padding-bottom:10px ;
+     padding-right: 25px;
 }
 .social_icon_main h4{
     font-family: 'Poppins', sans-serif;
     font-size: 25px;
     font-weight: bold;
+    color: #fff;
 }
+.social_icon_main ul {
+    list-style-type: none;
+    font-size: 35px;
+   
+    
+
+  }
+  .social_icon_staff ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 30px;
+        margin: 0 1px;
+        color: #fe9901;
+        background-color: #fff;
+        width: 40px;
+        height: 40px;
+        border-color: #fe9901 !important;
+
+  }
+  .iconssocial i{
+      color:  #fe9901 ;
+      background:#fff ;
+      border-radius: 50%; 
+    
+  }
+  .iconssocial {
+    border-radius: 50%; 
+    padding: 7px 11px;
+    background-color: #fff;
+  }
+  .iconssocial i:hover{
+     color: #FFF;
+     background-color: #111;
+     transition: ease-in all .4s;
+     
+  }
+  .iconssocial:hover{
+    background-color: #111;
+    transition: ease-in all .4s;
+  }
