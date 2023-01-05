@@ -3,7 +3,11 @@
 
 *{
     font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 
 .full_bg{
     background-image: url(img/banner3.jpg);
@@ -80,6 +84,7 @@
 .carousel-control-prev:active {
     background-color:  #fe9901 !important;/* red */
     transition: ease-in all .4s;
+    
 }
 .carousel-control-next:hover{
 
@@ -88,6 +93,7 @@
 }
 .carousel-control-next, .carousel-control-prev{
     bottom: 0 !important;
+
 }
  .carousel-control-prev {
     left: 5%;
@@ -158,6 +164,7 @@ about_img {
     margin: 0 auto;
     max-width: 1200px;
     width: 100%;
+    height: auto;
 
   }
   
@@ -188,14 +195,13 @@ about_img {
     bottom: 0;
     /* height: 123px; */
     overflow: hidden;
-    padding: 20px 20px 20px 20px;
+    /* padding: 20px 20px 20px 20px; */
     margin-right: 15px;
     transition: ease-in .5s;
   }
   .project_text {
     color: white;
     font-size: 20px;
-    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -203,13 +209,13 @@ about_img {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .project_text h3{
+  .project_text h6{
     transition: ease-in .5s;
     color-scheme: white;
     text-align: left;
     display: block;
     font-size: 500;
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
     
   }
   .project_text p {
@@ -467,4 +473,136 @@ about_img {
 }
 .truck{
     padding-top: 150px;
+}
+.truck_img1{
+    width: 244px;
+    height: 147px;
+    position: relative;
+    animation-name:myfirst ;
+    animation-delay: 0s;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation: myfirst 15s linear 0s infinite alternate;
+}
+@keyframes myfirst {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    20%{
+        left: 10%;
+        top: 0;
+    }
+    40%{
+        left: 20%;
+        top: 0;
+    }
+    60%{
+        left: 30%;
+        top: 0;
+    }
+    80%{
+        left: 50%;
+        top: 0;
+    }
+    100%{
+        left: 50%;
+        top: 0;
+    }
+}
+.clients{
+    padding-top: 90px;
+    background: #161825;
+    position: relative;
+}
+
+
+/* carousal css............... */
+
+
+.footer{
+    background: #161825;
+    padding-top: 90px;
+    text-align: center;
+}
+.many{
+    display: inline-block;
+    color: #fff;
+    font-size: 17px;
+    line-height: 32px;
+    font-weight: 400;
+    text-align: left;
+}
+.footer h3{
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 18px;
+    border-bottom: #fff solid 1px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 15px;
+    display: table;
+    text-align: left;
+    text-decoration: none;
+}
+li, ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.link_menu li{
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    list-style: none;
+
+}
+.footerhome:hover{
+    color: #fe9901;
+}
+.footerhome{
+    color: #fff;
+    line-height: 40px;
+}
+ul .insta{
+    margin-top: 24px;
+}
+.text_align_left{
+    text-align: left;
+    margin: 20px;
+}
+.bottomimg{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.bottom_form .enter{
+    padding: 8px 25px;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 300;
+    float: left;
+    margin-bottom: 20px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.sub_btn{
+    font-size: 16px;
+    transition: all 0.5 ease-in 0;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+    max-width: 270px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+.sub_btn:hover{
+    background-color: #fe9901;
+    transition: ease-in all .4s;
 }
