@@ -65,6 +65,9 @@
     
     
 }
+.carousalmaindiv{
+    margin-top: 120px;
+}
 .carousel-control-prev,
 .carousel-control-next{
     width: 60px !important;
@@ -74,12 +77,14 @@
     
     /* top: calc(50% -25); */
 }
-/* .carousel-control-prev{
+ .carousel-control-prev{
    right: 0!important;
+   top: 0;
+   margin-left: 25px;
 }
 .carousel-control-next{
     right: 0 !important;
-} */
+} 
 .carousel-control-prev:hover,
 .carousel-control-prev:active {
     background-color:  #fe9901 !important;/* red */
@@ -96,14 +101,17 @@
 
 }
  .carousel-control-prev {
-    left: 5%;
+    right: 0%;
     bottom: 0;
   } 
   .carousel-control-next {
     right: 5%;
+    bottom: 0;
+    margin-left: 20px;
   }
   .carousel-control-prev {
     bottom: 0 !important;
+    margin-left: 0px;
 }
 
 
@@ -198,6 +206,7 @@ about_img {
     /* padding: 20px 20px 20px 20px; */
     margin-right: 15px;
     transition: ease-in .5s;
+    width: 100%;
   }
   .project_text {
     color: white;
@@ -209,9 +218,9 @@ about_img {
     transform: translate(-50%, -50%);
     text-align: center;
   }
-  .project_text h6{
+  .project_text h3{
     transition: ease-in .5s;
-    color-scheme: white;
+    color-scheme: rgb(0, 0, 0);
     text-align: left;
     display: block;
     font-size: 500;
@@ -236,13 +245,44 @@ about_img {
     color: #111;
 }
 
-  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
-    background: 0 0;
-    color: cadetblue;
-    border: none;
-    padding: 0!important;
-    font: inherit;
-    background-color: #111 !important;
+.owl-prev span, .owl-next span {
+	color: #FFF;
+    background-color:black;
+    padding: 20px;
+    bottom: 0;
+    border-radius:50% ;
+    
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
+}
+
+.owl-prev span:hover, 
+.owl-next span:hover {
+	color: #ffffff;
+    background-color: #fe9901;
+
+
+}
+
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 0;
+	height: 100%;
+    transition: ease-in all .4s;
+}
+
+.owl-prev {
+	bottom: 0px;
+}
+
+.owl-next {
+	right: 7px;
+}
+
+/* removing blue outline from buttons */
+button:focus, button:active {
+   outline: none;
 }
   
   
@@ -471,6 +511,82 @@ about_img {
     background-color: #fe9901;
     color: #fff;
 }
+/* carousal..................... */
+.relative2{
+    position: inherit;
+    padding-left: 0  50px 80px 50px;
+    border-top: #fe9901 solid 120px;
+    border-radius: 5px;
+    padding-bottom: 80px;
+}
+.relative2 i{
+    margin-top: -54px;
+    position: relative;
+    display: block;
+}
+.carousalman{
+    z-index: 5;
+}
+.relative2 span{
+    color: #111;
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+.relative2 p{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 400;
+}
+.d_flex{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.qusleft{
+   padding-left: 10px;
+}
+.qusight{
+   padding-right: 10px;
+}
+.carousel-control-prev2,
+.carousel-control-next2{
+    width: 60px !important;
+    height: 60px !important;
+    background-color: #111 !important;
+    border-radius: 50% !important;
+    
+    /* top: calc(50% -25); */
+}
+ 
+.carousel-control-prev2:hover,
+.carousel-control-prev2:active {
+    background-color:  #fe9901 !important;/* red */
+    transition: ease-in all .4s;
+    
+}
+.carousel-control-next2:hover{
+
+    background-color:  #fe9901 !important;
+    transition: ease-in all .4s;
+}
+.carousel-control-next2 .carousel-control-prev2{
+    bottom: 0 !important;
+
+}
+ .carousel-control-prev2 {
+    right: 0%;
+    bottom: 0;
+  } 
+  .carousel-control-next2 {
+    right: 0%;
+    bottom: 0 !important;
+    
+  }
+  
+
+/* truck.................. */
 .truck{
     padding-top: 150px;
 }
