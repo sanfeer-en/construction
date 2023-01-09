@@ -74,16 +74,19 @@
     height: 60px !important;
     background-color: #111 !important;
     border-radius: 50% !important;
+    bottom: 5% !important;
     
     /* top: calc(50% -25); */
 }
  .carousel-control-prev{
-   right: 0!important;
-   top: 0;
+   left: 89%!important;
+   
    margin-left: 25px;
+   bottom: 50% !important;
 }
 .carousel-control-next{
     right: 0 !important;
+    bottom: 0 !important;
 } 
 .carousel-control-prev:hover,
 .carousel-control-prev:active {
@@ -100,12 +103,13 @@
     bottom: 0 !important;
 
 }
- .carousel-control-prev {
-    right: 0% !important;
-    bottom: 0;
-  } 
+ 
+  .carousel-control-prev {
+    right: 0 !important;
+    margin-right: 64px;
+}
   .carousel-control-next {
-    left: 5%;
+    right: 0;
     bottom: 0%  !important;
     margin-left: 20px;
   }
@@ -113,6 +117,7 @@
     bottom: 0 !important;
     margin-left: 0px;
 }
+
 
 
 .const{
